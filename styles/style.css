@@ -3,6 +3,13 @@ body{
     font-family: 'Sarabun', sans-serif;
 }
 
+.btn{
+    color: #000;
+    background: #ffd700;
+    
+    font-size: 20px;
+}
+
 header{
     width: 100%;
     height: 120px;
@@ -34,6 +41,11 @@ header ul li a{
     padding: 0 20px;
     line-height: 80px;
 }
+header ul li a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: .6s;
+}
 
 header ul li{
     list-style: none;
@@ -58,11 +70,51 @@ header ul li{
 }
 /*Colecciones*/
 
+.colecciones h2{
+    font-size: 50px;
+    font-family: 'Volkhov', sans-serif;
+    text-align: center;
+}
+
 .tarjetas{
     display: grid;
+    gap:10px;
     grid-template-columns: repeat(4, 1fr);
 }
-.tarjetas img{
+.tarjetas .cuerpo-tarjeta{
+    background: #fff5ee;
+    width: 100%;
+    border-radius: 5px;
+   
+}
+.tarjetas .cuerpo-tarjeta img{
     width: 245px;
     height: 365px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+
+.cuerpo-tarjeta h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+.tarjetas .cuerpo-tarjeta p{
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.tarjetas  .cuerpo-tarjeta .formularios{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tarjetas select, .tarjetas input, .tarjetas button{
+    width: 80%;
+    height:35px;
+    margin: 20px 10px;
+    border-radius: 5px;
+
 }
