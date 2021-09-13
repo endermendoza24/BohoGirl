@@ -1,6 +1,7 @@
 body{
     
     font-family: 'Sarabun', sans-serif;
+    
 }
 
 .btn{
@@ -42,8 +43,8 @@ header ul li a{
     line-height: 80px;
 }
 header ul li a:hover{
-    color: #08dbbd;
-    border-bottom: 1px solid #08dbbd;
+    color: #000;
+    background: #08dbbd;
     transition: .6s;
 }
 
@@ -63,12 +64,78 @@ header ul li{
     margin: 150px auto;
 }
 
-.slideshow{
-    background-color: orange;
-    width: 100%;
-    height: 300px;
-    margin: 0 auto;
+ul, li{
+    list-style: none;
+    text-decoration: none;
 }
+
+
+.ofertas{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #08dbbd;
+}
+
+.ofertas  .texto-oferta a{
+    background: #ff0202;
+    color: #000;
+    font-size: 20px;
+}
+.ofertas .precio-oferta{
+    color: #ff0202;
+    font-size: 70px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: bolder;
+}
+.ofertas p{
+    color: #ff0202;
+    font-size: 25px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 500;
+}
+
+.ofertas img{
+    width:80%
+}
+
+.oferta-dos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: #731F5C;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.oferta-dos img{
+    width: 80%;
+    margin: 20px 0;
+}
+
+.oferta-dos .texto-ofertados{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+.oferta-dos .texto-ofertados p{
+    font-size: 25px;
+}
+.oferta-dos .texto-ofertados a{
+    color: #fff;
+    text-decoration: none;
+    background: #08dbbd;
+    width: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+
+
 /*Colecciones*/
 
 .colecciones h2{
@@ -155,6 +222,45 @@ header ul li{
 .tarjeta-ocho .cuerpo-tarjeta:hover{
     background: url(../img/traje.png);
 }
+
+/*Categorias*/
+
+.categorias{
+    width: 80%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 60px;
+}
+.categorias div{
+    background: #fffdf9;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+}
+.categorias img{
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+}
+
+.categorias div a{
+    color: #000;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    letter-spacing: 5px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
 
 /*footer*/
 
