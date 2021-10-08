@@ -10,7 +10,7 @@ body{
     color:#fff;
     background: #731F5C;
     border-radius: 5px;
-    width: 70px;
+    width: 100px;
     padding: 10px;
     font-size: 25px;
     text-transform: uppercase;
@@ -54,8 +54,8 @@ header ul li a{
     line-height: 80px;
 }
 header ul li a:hover{
-    color: #000;
-    background: #08dbbd;
+    color: #08dbbd;
+    border-bottom:#08dbbd solid 1px ;
     transition: .6s;
 }
 
@@ -130,18 +130,25 @@ ul, li{
     width: 80%;
     margin: 20px 0;
 }
-
+ 
 .oferta-dos .texto-ofertados{
     font-family: 'Sarabun', sans-serif;
     font-size: 50px;
     text-align: center;
-    color: #fff;
+    border: 5px solid black;
+    color: red;
 }
 .oferta-dos .texto-ofertados p{
     font-size: 25px;
+    padding: 10px;
+    text-align: left;
+}
+.texto-ofertados .btn{
+    align-self: center;
+    margin: 10px;
 }
 .oferta-dos .texto-ofertados a{
-    color: #fff;
+    color: red;
     text-decoration: none;
     background: #08dbbd;
     width: 50px;
@@ -376,6 +383,10 @@ footer{
     .footer-col{
         width: 50%;
         margin-bottom:30px  ;
+    }
+
+    .tarjetas{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
